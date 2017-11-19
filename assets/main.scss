@@ -1,0 +1,64 @@
+---
+---
+
+$base-font-family: 'PT Serif', 'Cambria', 'Georgia', 'Times New Roman', serif;
+$code-font-family: 'Ubuntu Mono', monospace;
+
+$base-font-size:   17px;
+
+@import "{{ site.theme }}";
+
+.site-title {
+  font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  &:hover {
+  	text-decoration: none;
+  }
+}
+
+li {
+	margin-bottom: 6px;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+code {
+  font-family: $code-font-family;
+}
+
+h4 code {
+	font-size: 20px;
+}
+
+.post-item {
+  font-size: 18px;
+  font-family: $code-font-family;
+}
+
+a.post-meta {
+  color: $grey-color;
+}
+
+.disqus-hint {
+  color: $grey-color;
+  font-size: 14px;
+}
+
+.site-nav {
+  @include media-query($on-palm) {
+    border: none;
+  }
+}
+
+.highlight {
+  .highlighter-rouge & {
+    background: #eee;
+  }
+}
+
+pre,
+code {
+  background-color: #eee;
+}
