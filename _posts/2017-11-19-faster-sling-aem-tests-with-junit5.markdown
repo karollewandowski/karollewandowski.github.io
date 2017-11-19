@@ -3,7 +3,7 @@ layout: post
 author: Karol Lewandowski
 title:  "Faster Sling/AEM tests with JUnit5"
 date:   2017-11-19 12:00:00 +0100
-categories: 
+categories:
 ---
 #### `SlingContext`/`AemContext`
 - allow to create repository and populate it with test data
