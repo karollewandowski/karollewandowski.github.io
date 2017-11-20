@@ -33,11 +33,9 @@ void shouldVerifySomething(JcrOakAemContext context) {
 import io.wcm.testing.mock.aem.context.AemContextImpl;
 
 public class AemContext extends AemContextImpl {
-
     protected void setUpContext() {
         super.setUp();
     }
-
     protected void tearDownContext() {
         super.tearDown();
     }
@@ -130,18 +128,24 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 {% endhighlight %}
 
 #### Speed comparison
+- compared JUnit4 and JUnit5 test classes with:
+  - 2 empty test methods using `JCR_OAK` context
+  - 20 empty test methods using `JCR_MOCK` context
+  - 10 empty test methods using `RESOURCERESOLVER_MOCK` context
 - before:
-TODO
-<!--img alt="JUnit4 tests execution time: 16.82s" src="/assets/tests-execution-junit5.png" style="width: 500px;"-->
+  - run from IntelliJ IDEA: 9.276s
+  - run with `mvn clean test`: 8.696s
 - after:
-TODO
-<!--img alt="JUnit5 tests execution time: 3.08s" src="/assets/tests-execution-junit5.png" style="width: 500px;"-->
+  - run from IntelliJ IDEA: 2.116s
+  - run with `mvn clean test`: 0.461s
+- looks like potential build speed-up, doesn't it?
 
+#### Source code
+- TODO: clean and push code to GitHub
 
 #### Notes
-- if project has JUnit3/JUnit4 and JUnit5 tests, then 2 engines (Jupiter and Vintage) are run during the build, so time earned on tests level can be stolen by second engine execution (overhead is low though) - it's recommended to write only JUnit5 tests in new projects and migrate tests in existing ones
+- the same approach can be used for Sling Mocks (and other Sling-related mocks)
+- if project has JUnit3/JUnit4 and JUnit5 tests, then 2 engines (Jupiter and Vintage) are run during the build, so time earned on tests level can be stolen by second engine execution (few seconds of overhead) - it's recommended to write only JUnit5 tests in new projects and migrate tests in existing ones
 
 
 [junit5-extensions-lifecycle-callbacks]: http://junit.org/junit5/docs/current/user-guide/#extensions-lifecycle-callbacks
-[tests-execution-junit4]: /assets/tests-execution-junit4.png "JUnit4 AemContext tests execution time"
-[tests-execution-junit5]: /assets/tests-execution-junit5.png "JUnit5 AemContext tests execution time"
