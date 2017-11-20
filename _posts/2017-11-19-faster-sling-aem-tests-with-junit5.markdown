@@ -130,8 +130,8 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 #### Speed comparison
 - compared JUnit4 and JUnit5 test classes with:
   - 2 empty test methods using `JCR_OAK` context
-  - 20 empty test methods using `JCR_MOCK` context
-  - 10 empty test methods using `RESOURCERESOLVER_MOCK` context
+  - 20 empty test methods using `RESOURCERESOLVER_MOCK` context
+  - 10 empty test methods without using context
 - before:
   - run from IntelliJ IDEA: 9.276s
   - run with `mvn clean test`: 8.696s
