@@ -138,7 +138,7 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 - JUnit5:
   - run from IntelliJ IDEA: **2.116s**
   - run with `mvn clean test`: **1.892s**
-- only one class per JUnit4/JUnit5 was tested and about 1.5s is the time of creating AEM context for the first time, so once it is ready, next tests will be faster by about 15-20x (assuming that tests will use similar resource resolvers)
+- only one class per JUnit4/JUnit5 was tested and ~1.5s is the time of creating AEM context for the first time, so once it is ready, next tests will be faster by about 15-20x (assuming that tests will use similar resource resolvers)
 - build speed improvement is significant
 
 #### Source code
