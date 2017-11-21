@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nums-blog.core" />
+        <module name="nums-blog.ui.apps" />
+        <module name="nums-blog.ui.content" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nums-blog" target="1.8" />
+      <module name="nums-blog.core" target="1.8" />
+      <module name="nums-blog.it.launcher" target="1.6" />
+      <module name="nums-blog.it.tests" target="1.6" />
+      <module name="nums-blog.ui.apps" target="1.8" />
+      <module name="nums-blog.ui.content" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

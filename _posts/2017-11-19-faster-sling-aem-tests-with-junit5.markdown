@@ -137,7 +137,7 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
   - run with `mvn clean test`: **8.696s**
 - JUnit5:
   - run from IntelliJ IDEA: **2.116s**
-  - run with `mvn clean test`: **0.461s**
+  - run with `mvn clean test`: **1.892s**
 - looks like potential build speed-up, doesn't it?
 
 #### Source code

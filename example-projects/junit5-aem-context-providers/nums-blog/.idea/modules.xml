@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nums-blog.iml" filepath="$PROJECT_DIR$/nums-blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/nums-blog.core.iml" filepath="$PROJECT_DIR$/core/nums-blog.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps/nums-blog.ui.apps.iml" filepath="$PROJECT_DIR$/ui.apps/nums-blog.ui.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.content/nums-blog.ui.content.iml" filepath="$PROJECT_DIR$/ui.content/nums-blog.ui.content.iml" />
+    </modules>
+  </component>
+</project>
