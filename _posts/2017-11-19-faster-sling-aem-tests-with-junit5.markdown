@@ -132,10 +132,10 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
   - 2 empty test methods using `JCR_OAK` context
   - 20 empty test methods using `RESOURCERESOLVER_MOCK` context
   - 10 empty test methods without using context
-- before:
+- JUnit4:
   - run from IntelliJ IDEA: 9.276s
   - run with `mvn clean test`: 8.696s
-- after:
+- JUnit5:
   - run from IntelliJ IDEA: 2.116s
   - run with `mvn clean test`: 0.461s
 - looks like potential build speed-up, doesn't it?
@@ -144,8 +144,8 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 - TODO: clean and push code to GitHub
 
 #### Notes
-- the same approach can be used for Sling Mocks (and other Sling-related mocks)
 - if project has JUnit3/JUnit4 and JUnit5 tests, then 2 engines (Jupiter and Vintage) are run during the build, so time earned on tests level can be stolen by second engine execution (few seconds of overhead) - it's recommended to write only JUnit5 tests in new projects and migrate tests in existing ones
+- the same approach can be used for Sling Mocks (and other Sling-related mocks)
 
 
 [junit5-extensions-lifecycle-callbacks]: http://junit.org/junit5/docs/current/user-guide/#extensions-lifecycle-callbacks
