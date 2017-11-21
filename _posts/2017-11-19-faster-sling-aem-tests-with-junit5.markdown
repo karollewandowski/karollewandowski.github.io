@@ -142,7 +142,7 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 - build speed improvement is significant
 
 #### Source code
-- https://github.com/karollewandowski/karollewandowski.github.io/tree/master/_example-projects/junit5-aem-context-providers/nums-blog
+- [here you go][source-code]
 
 #### Notes
 - if project has JUnit3/JUnit4 and JUnit5 tests, then 2 engines (Jupiter and Vintage) are run during the build, so time earned on tests level can be stolen by second engine execution (few seconds of overhead) - it's recommended to write only JUnit5 tests in new projects and migrate tests in existing ones
@@ -150,3 +150,4 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 
 
 [junit5-extensions-lifecycle-callbacks]: http://junit.org/junit5/docs/current/user-guide/#extensions-lifecycle-callbacks
+[source-code]: https://github.com/karollewandowski/karollewandowski.github.io/tree/master/example-projects/junit5-aem-context-providers/nums-blog

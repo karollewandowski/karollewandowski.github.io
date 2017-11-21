@@ -62,3 +62,22 @@ pre,
 code {
   background-color: #eee;
 }
+
+.share-buttons {
+  margin: 20px 0 30px;
+  text-align: center;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    &.button-twitter {
+      color: #1ea1f2;
+    }
+    &.button-linkedin {
+      color: #0076b5;
+    }
+    &.button-google-plus {
+      color: #dd4d42;
+    }
+  }
+}

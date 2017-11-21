@@ -21,6 +21,21 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="share-buttons">
+    <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | cgi_escape }}%3A"
+      title="Share on Twitter" class="share-button button-twitter" rel="nofollow">
+      <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}"
+      title="Share on LinkedIn" class="share-button button-linkedin" rel="nofollow">
+      <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+    </a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+      title="Share on Google+" class="share-button button-google-plus" rel="nofollow">
+      <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
+    </a>
+  </div>
+
   {% if site.disqus.shortname %}
     <p class="disqus-hint">
       Make comments readable by using <a href="https://help.disqus.com/customer/portal/articles/665057-syntax-highlighting">syntax highlighting</a>, thanks.
