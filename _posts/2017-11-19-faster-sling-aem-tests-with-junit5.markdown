@@ -133,11 +133,11 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
   - 20 empty test methods using `RESOURCERESOLVER_MOCK` context
   - 10 empty test methods without using context
 - JUnit4:
-  - run from IntelliJ IDEA: 9.276s
-  - run with `mvn clean test`: 8.696s
+  - run from IntelliJ IDEA: **9.276s**
+  - run with `mvn clean test`: **8.696s**
 - JUnit5:
-  - run from IntelliJ IDEA: 2.116s
-  - run with `mvn clean test`: 0.461s
+  - run from IntelliJ IDEA: **2.116s**
+  - run with `mvn clean test`: **0.461s**
 - looks like potential build speed-up, doesn't it?
 
 #### Source code
