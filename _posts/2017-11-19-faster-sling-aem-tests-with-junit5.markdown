@@ -150,4 +150,4 @@ public class AemContextProvider implements ParameterResolver, AfterTestExecution
 
 
 [junit5-extensions-lifecycle-callbacks]: http://junit.org/junit5/docs/current/user-guide/#extensions-lifecycle-callbacks
-[source-code]: https://github.com/karollewandowski/karollewandowski.github.io/tree/master/example-projects/junit5-aem-context-providers/nums-blog
+[source-code]: https://github.com/karollewandowski/karollewandowski.github.io/tree/master/_example-projects/junit5-aem-context-providers/nums-blog
