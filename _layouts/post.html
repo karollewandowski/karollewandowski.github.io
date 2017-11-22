@@ -34,6 +34,10 @@ layout: default
       title="Share on Google+" class="share-button button-google-plus" rel="nofollow">
       <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
     </a>
+    <a href="mailto:?subject={{ page.title }}&amp;body={{ site.url }}{{ page.url }}"
+      title="Share by email" class="button-email" rel="nofollow">
+      <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
+    </a>
   </div>
 
   {% if site.disqus.shortname %}
