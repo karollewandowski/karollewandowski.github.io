@@ -61,6 +61,10 @@ a.post-meta {
 pre,
 code {
   background-color: #eee;
+  figure.highlight & {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .share-buttons {
